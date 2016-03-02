@@ -1,3 +1,7 @@
+neox_user:
+    resource: "@NeoxUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
