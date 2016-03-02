@@ -21,4 +21,14 @@ class DefaultController extends Controller
         return $this->render('default/UserBundle/cabinet.html.twig');
     }
 
+    /**
+     * Страница авторизации
+     *
+     * @return string
+     */
+    public function loginAction()
+    {
+        return $this->render('default/UserBundle/login.html.twig');
+    }
+
 }

@@ -1,3 +1,7 @@
 neox_user_cabinet:
     path:    /cabinet.html
     defaults: { _controller: NeoxUserBundle:Default:cabinet }
+
+neox_user_login:
+    path:    /login.html
+    defaults: { _controller: NeoxUserBundle:Default:login }
