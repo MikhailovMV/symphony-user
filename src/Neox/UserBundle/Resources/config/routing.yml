@@ -1,3 +1,3 @@
-neox_user_homepage:
-    path:     /
-    defaults: { _controller: NeoxUserBundle:Default:index }
+neox_user_cabinet:
+    path:    /cabinet.html
+    defaults: { _controller: NeoxUserBundle:Default:cabinet }

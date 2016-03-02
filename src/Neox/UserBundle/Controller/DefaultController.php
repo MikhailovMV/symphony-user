@@ -10,4 +10,15 @@ class DefaultController extends Controller
     {
         return $this->render('NeoxUserBundle:Default:index.html.twig');
     }
+
+    /**
+     * Страница личного кабинета
+     *
+     * @return string
+     */
+    public function cabinetAction()
+    {
+        return $this->render('default/UserBundle/cabinet.html.twig');
+    }
+
 }
