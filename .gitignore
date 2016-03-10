@@ -10,3 +10,4 @@
 !var/sessions/.gitkeep
 /phpunit.xml
 /.idea/
+/web/assets/

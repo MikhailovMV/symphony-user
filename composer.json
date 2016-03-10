@@ -26,7 +26,9 @@
         "symfony/monolog-bundle": "^2.8",
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "^2.0"
+        "incenteev/composer-parameter-handler": "^2.0",
+        "robloach/component-installer": "1.0.x-dev",
+        "components/bootstrap": "4.x-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -53,7 +55,8 @@
     "config": {
         "platform": {
             "php": "5.5.9"
-        }
+        },
+        "component-dir": "web/assets"
     },
     "extra": {
         "symfony-app-dir": "app",
