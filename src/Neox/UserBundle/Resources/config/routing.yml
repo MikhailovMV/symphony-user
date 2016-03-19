@@ -9,3 +9,7 @@ neox_user_login:
 neox_user_register:
     path:    /register.html
     defaults: { _controller: NeoxUserBundle:Default:register }
+
+neox_user_registered:
+    path:    /registered.html
+    defaults: { _controller: NeoxUserBundle:Default:registered }

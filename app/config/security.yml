@@ -28,3 +28,7 @@ security:
             form_login:
                 check_path:    /cabinet/login_check
                 login_path:    /login.html
+
+    # Указание вида шифрования пароля для пользователей
+    encoders:
+        Neox\UserBundle\Entity\User: bcrypt
