@@ -4,25 +4,28 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6aa4a740cbf5d2a8ba33169a10f67c91",
-    "content-hash": "d6a8affa8638fadd71f5b8a7e3df0c8d",
+    "hash": "c8d3151a5485d2545d193be2e18601f6",
+    "content-hash": "e5113483d586db4a9e347aea5ac4413d",
     "packages": [
         {
             "name": "components/bootstrap",
-            "version": "4.x-dev",
+            "version": "3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "c9521fbdc0c495ae80992c3a207385741eb4e829"
+                "reference": "fb4923919c620b8b2aa8a11eda16b49b0a9e8a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/c9521fbdc0c495ae80992c3a207385741eb4e829",
-                "reference": "c9521fbdc0c495ae80992c3a207385741eb4e829",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/fb4923919c620b8b2aa8a11eda16b49b0a9e8a27",
+                "reference": "fb4923919c620b8b2aa8a11eda16b49b0a9e8a27",
                 "shasum": ""
             },
             "require": {
-                "components/jquery": "<3.0"
+                "components/jquery": "1.9.1 - 2"
+            },
+            "suggest": {
+                "components/bootstrap-default": "Provide a theme for Bootstrap as components/bootstrap only provides the CSS as file assets"
             },
             "type": "component",
             "extra": {
@@ -33,7 +36,10 @@
                     "files": [
                         "js/*.js",
                         "css/*.css",
-                        "css/*.map"
+                        "css/*.map",
+                        "fonts/*",
+                        "less/mixins/*.less",
+                        "less/*.less"
                     ],
                     "shim": {
                         "deps": [
@@ -67,7 +73,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-08-21 17:29:37"
+            "time": "2015-11-24 20:19:41"
         },
         {
             "name": "components/jquery",
@@ -2177,8 +2183,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "robloach/component-installer": 20,
-        "components/bootstrap": 20
+        "robloach/component-installer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
