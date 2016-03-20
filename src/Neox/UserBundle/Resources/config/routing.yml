@@ -16,3 +16,6 @@ neox_user_register:
 neox_user_registered:
     path:    /registered.html
     defaults: { _controller: NeoxUserBundle:Default:registered }
+
+neox_user_logout:
+    path:    /cabinet/logout.html

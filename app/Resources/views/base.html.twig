@@ -35,7 +35,7 @@
                 <div class="navbar-collapse collapse" id="bs-main-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li {% if app.request.attributes.get('_route') == 'homepage' %}class="active"{% endif %}>
-                            <a href="">Главная</a>
+                            <a href="{{ app.request.baseUrl }}">Главная</a>
                         </li>
                         <li {% if app.request.attributes.get('_route') starts with 'neox_user' %}class="active"{% endif %}>
                             <a href="{{ path('neox_user_cabinet') }}">Личный кабинет</a>
@@ -52,7 +52,7 @@
                                 <strong>{{ app.user.username }}</strong><b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="">Профиль</a></li>
-                                <li><a href="">Выход</a></li>
+                                <li><a href="{{ path('neox_user_logout') }}">Выход</a></li>
                             </ul>
                         </li>
                     </ul>

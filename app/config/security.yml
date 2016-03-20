@@ -29,8 +29,16 @@ security:
             # http://symfony.com/doc/current/cookbook/security/form_login_setup.html
 
         secured_area:
-            pattern: ^/cabinet
+            anonymous: ~
+            pattern: ^/
             form_login:
                 default_target_path: neox_user_cabinet
                 login_path: neox_user_login
                 check_path: neox_user_check_login
+            logout:
+                path:   neox_user_logout
+                target: /
+
+    access_control:
+            # require ROLE_ADMIN for /admin*
+            - { path: ^/cabinet, roles: ROLE_USER }
