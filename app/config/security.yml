@@ -4,8 +4,13 @@ security:
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
-        in_memory:
-            memory: ~
+        neox_user:
+            entity: { class: NeoxUserBundle:User, property: email }
+
+    # Указание вида шифрования пароля для пользователей
+    encoders:
+        Neox\UserBundle\Entity\User:
+            algorithm: bcrypt
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -26,9 +31,6 @@ security:
         secured_area:
             pattern: ^/cabinet
             form_login:
-                check_path:    /cabinet/login_check
-                login_path:    /login.html
-
-    # Указание вида шифрования пароля для пользователей
-    encoders:
-        Neox\UserBundle\Entity\User: bcrypt
+                default_target_path: neox_user_cabinet
+                login_path: neox_user_login
+                check_path: neox_user_check_login

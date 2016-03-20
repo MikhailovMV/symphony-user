@@ -6,6 +6,9 @@ neox_user_login:
     path:    /login.html
     defaults: { _controller: NeoxUserBundle:Default:login }
 
+neox_user_check_login:
+    path:    /cabinet/check-login.html
+
 neox_user_register:
     path:    /register.html
     defaults: { _controller: NeoxUserBundle:Default:register }
